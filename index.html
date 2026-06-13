@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-root">
+      <!-- Bottom Fade Grid Background -->
+      <div class="bg-grid" aria-hidden="true"></div>
+
+      <div class="container">
+        <h1 class="title">Expense Tracker</h1>
+        <div class="starting-balance">
+          <button id="reset-btn">Reset App</button>
+          <input
+            type="number"
+            class="money-balance"
+            placeholder="Starting Balance"
+          />
+          <button id="set-balance-btn">Add Balance</button>
+        </div>
+        <div class="balance">
+          <p>Account Balance: $</p>
+          <p class="balanceAmount">0</p>
+        </div>
+        <div class="input-section">
+          <input
+            type="text"
+            id="description"
+            placeholder="Transaction description"
+          />
+          <input type="number" id="amount" placeholder="Amount" />
+          <button id="add-btn">Add Transaction</button>
+        </div>
+        <div>
+          <p class="amount-spent">Total Spent $0</p>
+        </div>
+        <ul id="transaction-list"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
